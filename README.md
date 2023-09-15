@@ -1,9 +1,15 @@
 
-Crud API Endpoints
------------------------
+# Crud API Endpoints
 
-Method  POST
-http://localhost:9091/api/book/create
+## Creat Book
+
+**Method:** POST
+
+**Enpoints:** `http://localhost:9091/api/book/create`
+
+**Request Body** 
+
+```json
 {
     "author": "Kishore",
     "description":"Story of village Boy",
@@ -13,10 +19,17 @@ http://localhost:9091/api/book/create
     "pages": 4000
 
 }
-----------
+```
+-----
+## Update Book
 
-Method : PUT
-http://localhost:9091/api/book/update
+**Method:** PUT
+
+**Enpoints:** `http://localhost:9091/api/book/update`
+
+**Request Body**
+
+```json
 {
     "author": "Kishore Kumar",
     "description":"Story of village Boy",
@@ -27,15 +40,28 @@ http://localhost:9091/api/book/update
     "id":4
 
 }
+``````
 ----------
-Method : GET
-http://localhost:9091/api/book/getAll
+## Gel All Books
+
+**Method:** GET
+
+**Enpoints:**  `http://localhost:9091/api/book/getAll`
 
 ----------
 
-Method : GET
-http://localhost:9091/api/book/3
+## Get Book By Id
+
+**Method:** GET
+
+**Enpoints:**  `http://localhost:9091/api/book/3`
 
 ----------
-Method : DELETE
-http://localhost:9091/api/book/4
+## Delete Book By Id
+
+**Method:** DELETE
+
+**Enpoints:**  `http://localhost:9091/api/book/4`
+
+These are the REST API endpoints and operations available for managing books.
+
