@@ -65,3 +65,33 @@
 
 These are the REST API endpoints and operations available for managing books.
 
+--------
+
+# To run the test cases
+### Run the below command to genarate the jacoco report and add below jacoco plugin in pom.xml
+**mvn clean jacoco: report**
+``````
+<!-- JaCoCo Plugin Configuration -->
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.7</version> <!-- Use the latest version available -->
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+``````
+
+
